@@ -17,26 +17,14 @@ export default function Home({ allPostsData }) {
         </p>
         <p>
           I made this website to get some experience using Next.js and to show off my projects as I complete them.
-          I am interested in all things data, and gaining as much knowledge as I can! Always happy to talk shop or get book reccomendations. See the
-          Contact page for more.
         </p>
-      </section>
-      <section className={'${utilStyles.headingMd} ${utilStyles.padding1px}'}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+        <p>
+          Always happy to talk shop, or receive reading reccomendations. See the
+          <Link href="/contact"> Contact page </Link> for more.
 
-          ))}
-        </ul>
+          This site and my project(s) are a work in progress; let me know if you encounter any errors.
+
+        </p>
       </section>
     </Layout>
   )

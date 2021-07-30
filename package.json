@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.23.0",
+    "autoprefixer": "^10.3.1",
     "date-fns": "^2.23.0",
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
