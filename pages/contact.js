@@ -24,11 +24,3 @@ export default function Contact() {
     </Layout>
   );
 }
-
-export async function getStaticPaths() {
-  const paths = ['contact']
-  return {
-    paths,
-    fallback: false
-  }
-}
