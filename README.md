@@ -1,1 +1,1 @@
-visit the site at [jcatron.com]
+[visit the site](jcatron.com)
