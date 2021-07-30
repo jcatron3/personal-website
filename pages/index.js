@@ -19,6 +19,8 @@ export default function Home({ allPostsData }) {
           I made this website to get some experience using Next.js and to show off my projects as I complete them.
           I am interested in all things data, and gaining as much knowledge as I can! Always happy to talk shop or get book reccomendations. See the
           Contact page for more.
+
+          This site and my project(s) are a work in progress, let me know if you encounter any errors.
         </p>
       </section>
       <section className={'${utilStyles.headingMd} ${utilStyles.padding1px}'}>
