@@ -12,23 +12,8 @@ export default function Navigation() {
           </Link>
         </li>
         <li className={styles.nav__listItem}>
-          <Link href="/about">
-            <a className={styles.nav__link}>About</a>
-          </Link>
-        </li>
-        <li className={styles.nav__listItem}>
-          <Link href="/blog">
-            <a className={styles.nav__link}>Blog</a>
-          </Link>
-        </li>
-        <li className={styles.nav__listItem}>
-          <Link href="/community">
-            <a className={styles.nav__link}>Community</a>
-          </Link>
-        </li>
-        <li className={styles.nav__listItem}>
-          <Link href="/reading">
-            <a className={styles.nav__link}>Reading</a>
+          <Link href="/projects">
+            <a className={styles.nav__link}>Projects</a>
           </Link>
         </li>
         <li className={styles.nav__listItem}>
