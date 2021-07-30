@@ -1,4 +1,4 @@
-import Head from "next/head";
+/*import Head from "next/head";
 import Layout, { siteTitle } from "../../components/layout"
 import { projectPath } from "../../lib/projects"
 
@@ -14,11 +14,11 @@ export default function Project() {
   )
 }
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   return {
     paths: [
       { params: { id: 'lstm' } }
     ],
     fallback: false
   }
-}
+}*/
