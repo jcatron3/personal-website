@@ -7,7 +7,7 @@ import Navigation from "./navigation";
 import Footer from "./footer";
 
 const name = 'Jake Catron'
-export const siteTitle = 'Personal Website'
+export const siteTitle = 'Jake Catron'
 
 export default function Layout({ children, home }) {
   return (
@@ -19,6 +19,10 @@ export default function Layout({ children, home }) {
           content="Jake Catron's personal development website."
         />
         <meta name="title" content={siteTitle} />
+        <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
+        <link rel="manifest" href="../public/site.webmanifest" />
       </Head>
       <header className={styles.header}>
         {home ? (
