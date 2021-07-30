@@ -13,7 +13,6 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Jake Catron's personal development website."
@@ -22,6 +21,7 @@ export default function Layout({ children, home }) {
         <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="../public/site.webmanifest" />
       </Head>
       <header className={styles.header}>
@@ -46,23 +46,22 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <div className="header__logo">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a aria-label="Jake Catron" className={styles.header__logoText}>
+                  <h1 className={`${styles.heading} ${styles.headingOther}`}>
+                    Jake
+                    <img
+                      src="/images/profile.png"
+                      className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                      alt="Lake Tahoe - Castle Rock pic"
+                    />
+                    Catron
+                  </h1>
+                </a>
               </Link>
-            </h2>
+            </div>
+            <Navigation />
           </>
         )}
       </header>
