@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Layout, { siteTitle } from '../components/Layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
           I made this website to get some experience using Next.js and to show off my projects as I complete them.
         </p>
         <p>
-          Always happy to talk shop, or receive reading reccomendations. See the
+          Always happy to talk shop, or receive reading recommendations. See the
           <Link href="/contact"> Contact page </Link> for more.
 
           This site and my project(s) are a work in progress; let me know if you encounter any errors.
