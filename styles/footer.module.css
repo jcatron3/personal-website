@@ -37,6 +37,8 @@
 
 .footer__listItem {
   margin: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer__copyright {

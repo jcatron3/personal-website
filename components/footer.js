@@ -11,16 +11,16 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <ul className={styles.footer__list}>
-        <li>
+        <li className={styles.footer__listItem}>
           <motion.a
-            href="../public/jerry_catron_resume.pdf"
+            href="/jerry_catron_resume.pdf"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             Resume
           </motion.a>
         </li>
-        <li>
+        <li className={styles.footer__listItem}>
           <motion.a
             href="https://github.com/jcatron3"
             whileHover={{ scale: 1.05 }}
@@ -29,7 +29,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </motion.a>
         </li>
-        <li>
+        <li className={styles.footer__listItem}>
           <motion.a
             href="https://www.linkedin.com/in/jakecatron/"
             whileHover={{ scale: 1.1 }}

@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout.js";
+import Layout from "../components/layout.js";
+import { siteTitle } from "./_document.js";
 import TopTracks from "../components/topTracks.js";
 
 export default function Dashboard() {
