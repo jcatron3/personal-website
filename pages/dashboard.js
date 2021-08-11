@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/Layout";
-import TopTracks from "../components/TopTracks";
+import Layout, { siteTitle } from "../components/Layout.js";
+import TopTracks from "../components/TopTracks.js";
 
 export default function Dashboard() {
   return (
