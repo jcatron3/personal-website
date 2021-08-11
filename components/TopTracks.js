@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 
 import fetcher from '../lib/fetcher';
-import Track from './track';
+import Track from './Track';
 
 export default function TopTracks() {
   const { data } = useSWR('/api/top_tracks', fetcher);
