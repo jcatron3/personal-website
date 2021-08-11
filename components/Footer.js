@@ -13,7 +13,7 @@ export default function Footer() {
       <ul className={styles.footer__list}>
         <li>
           <motion.a
-            href="../public/Jake_Catron_Resume.pdf"
+            href="../public/jerry_catron_resume.pdf"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
