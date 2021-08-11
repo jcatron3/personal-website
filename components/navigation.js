@@ -7,11 +7,6 @@ export default function Navigation() {
       <div className={styles.nav__separator}>_____________________</div>
       <ul id="menu" className={styles.nav__list}>
         <li className={styles.nav__listItem}>
-          <Link href="/projects">
-            <a className={styles.nav__link}>Projects</a>
-          </Link>
-        </li>
-        <li className={styles.nav__listItem}>
           <Link href="/dashboard">
             <a className={styles.nav__link}>Dashboard</a>
           </Link>
