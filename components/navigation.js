@@ -1,23 +1,39 @@
-import styles from "./navigation.module.css";
 import Link from "next/link";
+import ThemeSwitch from "./themeSwitcher";
 
 export default function Navigation() {
   return (
-    <nav id="navigation" className={styles.nav}>
-      <div className={styles.nav__separator}>_____________________</div>
-      <ul id="menu" className={styles.nav__list}>
-        <li className={styles.nav__listItem}>
-          <Link href="/lstm.html">
-            <a className={styles.nav__link}>LSTM Project</a>
-          </Link>
-        </li>
-        <li className={styles.nav__listItem}>
-          <Link href="/contact">
-            <a className={styles.nav__link}>Contact</a>
-          </Link>
-        </li>
-      </ul>
-      <div className={styles.nav__separator}>_____________________</div>
-    </nav>
+    <div className="sticky top-0 z-20 py-2 bg-white md:py-6 md:mb-6 dark:bg-black">
+      <div className="container px-4 mx-auto lg:max-w-4xl flex items-center justify-between">
+        <Link href="/">
+          <a
+            className={
+              "font-medium tracking-wider transition-colors text-gray-900 hover:text-sky-500 uppercase dark:text-white"
+            }
+          >
+            Jake Catron
+          </a>
+        </Link>
+        <Link href="/dashboard">
+          <a
+            className={
+              "font-light tracking-wider transition-colors text-gray-900 hover:text-sky-500 uppercase dark:text-white"
+            }
+          >
+            Dashboard
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a
+            className={
+              "font-light tracking-wider transition-colors text-gray-900 hover:text-sky-500 uppercase dark:text-white"
+            }
+          >
+            Contact
+          </a>
+        </Link>
+        <ThemeSwitch />
+      </div>
+    </div>
   );
 }
