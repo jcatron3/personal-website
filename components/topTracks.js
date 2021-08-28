@@ -9,8 +9,8 @@ export default function TopTracks() {
   if (!data) {
     return null;
   }
-
+  console.log(data)
   return data.tracks.map((track, index) => (
-    <Track ranking={index + 1} key={track.songUrl} {...track} />
+    <Track ranking={index + 1} {...track} />
   ));
 }

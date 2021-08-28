@@ -5,13 +5,15 @@ import utilStyles from "../styles/utils.module.css";
 
 export default function Contact() {
   return (
-    <Layout>
+    <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
       <Head>
         <title>{siteTitle}: Contact</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <h2>Want to say hello?</h2>
-        <p>
+        <h2 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+          Want to say hello?
+        </h2>
+      <div className="mb-8">
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
           You can reach out by email via{" "}
           <a
             className={utilStyles.linkFeature}
@@ -21,7 +23,7 @@ export default function Contact() {
           </a>
           .
         </p>
-      </section>
-    </Layout>
+      </div>
+    </div>
   );
 }

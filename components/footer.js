@@ -1,5 +1,4 @@
 import styles from "../styles/footer.module.css";
-import utilStyles from "../styles/utils.module.css";
 import {
   faGithub,
   faLinkedin,
@@ -39,15 +38,6 @@ export default function Footer() {
           </motion.a>
         </li>
       </ul>
-      <p className={styles.footer__copyright}>
-        <small>
-          Designed and built by Jake Catron - an experiment with{" "}
-          <a className={utilStyles.linkFeature} href="https://nextjs.org/">
-            Next.JS
-          </a>{" "}
-          | © {new Date().getFullYear()}
-        </small>
-      </p>
     </footer>
   );
 }
