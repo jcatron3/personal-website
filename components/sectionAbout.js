@@ -25,7 +25,7 @@ export default function SectionAbout() {
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
           <Image
-            src={'/profile.png'}
+            src='/profile.png'
             alt="Profile"
             priority={true}
             className="rounded-full"
