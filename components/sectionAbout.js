@@ -1,4 +1,4 @@
-//import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SectionAbout() {
@@ -24,7 +24,7 @@ export default function SectionAbout() {
           </div>
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
-          <img
+          <Image
             src='/profile.png'
             alt="Profile"
             priority={true}
