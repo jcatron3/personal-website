@@ -1,6 +1,17 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export const siteTitle = 'Jake Catron'
+
+let prod = process.env.NODE_ENV == "production"
+
+let csp = ``
+csp += `base-uri 'self';`
+csp += `form-action 'self';`
+csp += `default-src 'self';`
+csp += `script-src 'self' ${prod ? "" : "'unsafe-eval'"};`                    // NextJS requires 'unsafe-eval' in dev (faster source maps)
+csp += `style-src 'self' https://fonts.googleapis.com 'unsafe-inline' data:;` // NextJS requires 'unsafe-inline'
+csp += `img-src 'self' https://*.githubusercontent.com  data: blob:;`
+csp += `font-src 'self' https://fonts.gstatic.com;`  // TODO
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -15,6 +26,7 @@ class MyDocument extends Document {
             name="description"
             content="Jake Catron's personal development website."
           />
+          <meta
           <meta name="title" content={siteTitle} />
           <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
