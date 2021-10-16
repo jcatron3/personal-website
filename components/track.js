@@ -6,8 +6,8 @@ export default function Track(track) {
       <p className="text-xl font-bold text-gray-400 dark:text-gray-600">
         {track.ranking}
       </p>
-      <div>
-        <Image src={track.albumImageUrl} alt='album cover'width={100} height={100} />
+      <div >
+        <Image src={track.albumImageUrl} height="100px" width="100px" />
       </div>
       <div className="flex flex-col pl-3">
         <a
