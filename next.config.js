@@ -16,10 +16,10 @@ module.exports = {
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  default-src 'self' :blob :data;
+  default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
-  img-src *;
+  img-src 'self' :data;
   media-src 'none';
   connect-src *;
   font-src 'self';
