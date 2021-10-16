@@ -20,7 +20,7 @@ const ContentSecurityPolicy = `
   script-src 'self' 'unsafe-eval' unsafe-inline *.youtube.com *.twitter.com cdn.usefathom.com;
   child-src *.youtube.com *.google.com *.twitter.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
-  img-src * blob: data:;
+  img-src i.scdn.co blob: data:;
   media-src 'none';
   connect-src *;
   font-src 'self';
