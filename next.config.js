@@ -16,9 +16,8 @@ module.exports = {
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  default-src 'self * :blob :data';
+  default-src 'self' :blob :data;
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com;
-  child-src *.youtube.com *.google.com *.twitter.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src *;
   media-src 'none';
