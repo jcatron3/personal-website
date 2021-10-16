@@ -26,7 +26,7 @@ class MyDocument extends Document {
             name="description"
             content="Jake Catron's personal development website."
           />
-          <meta
+          <meta httpEquiv="Content-Security-Policy" content={csp} />
           <meta name="title" content={siteTitle} />
           <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
