@@ -1,7 +1,7 @@
 module.exports = {
   images: {
     domains: ['i.scdn.co'],
-  }/*,
+  },
   async headers() {
     return [
       {
@@ -10,7 +10,7 @@ module.exports = {
         headers: securityHeaders
       }
     ]
-  }*/
+  }
 }
 
 
