@@ -11,11 +11,7 @@ export default function SectionAbout() {
           </h1>
           <div className=" mt-6 text-gray-800 dark:text-white">
             <p className="mb-4">
-              I'm Jake, a Computer Science & Mathematics student at the University
-              of Maryland.
-            </p>
-            <p className="mb-4">
-              I will be graduating in May 2022 and am looking for full-time employment as a software engineer.
+              I'm Jake, a Software Engineer.
             </p>
             <p className="mb-4">
               This is my personal website to experiment with web development, and show off my projects as I complete them.

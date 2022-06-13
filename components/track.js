@@ -7,7 +7,7 @@ export default function Track(track) {
         {track.ranking}
       </p>
       <div >
-        <img
+        <Image
           src={track.albumImageUrl}
           height={100}
           width={100}
