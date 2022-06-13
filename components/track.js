@@ -2,12 +2,16 @@ import Image from 'next/image'
 
 export default function Track(track) {
   return (
-    <div className="flex flex-row space-x-4 items-center border-b border-gray-100 dark:border-gray-800 max-w-3xl w-full mt-8">
+    <div className="flex flex-row pb-6 space-x-4 items-center border-b border-gray-100 dark:border-gray-800 max-w-3xl w-full ml-2 mt-8">
       <p className="text-xl font-bold text-gray-400 dark:text-gray-600">
         {track.ranking}
       </p>
-      <div>
-        <Image src={track.albumImageUrl} width={100} height={100} />
+      <div >
+        <Image
+          src={track.albumImageUrl}
+          height={100}
+          width={100}
+        />
       </div>
       <div className="flex flex-col pl-3">
         <a
