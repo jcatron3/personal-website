@@ -11,7 +11,7 @@ export default function Track(track) {
           src={track.albumImageUrl}
           height={100}
           width={100}
-          layout='fill'
+          layout='responsive'
         />
       </div>
       <div className="flex flex-col pl-3">
