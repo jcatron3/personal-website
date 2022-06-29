@@ -15,6 +15,7 @@ export default function Footer() {
             href="/jerry_catron_resume.pdf"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            alt="Resume"
           >
             Resume
           </motion.a>
@@ -24,6 +25,7 @@ export default function Footer() {
             href="https://github.com/jcatron3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            alt="Github"
           >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </motion.a>
@@ -33,6 +35,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/jakecatron/"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            alt="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </motion.a>

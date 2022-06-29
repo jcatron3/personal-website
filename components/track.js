@@ -6,12 +6,12 @@ export default function Track(track) {
       <p className="text-xl font-bold text-gray-400 dark:text-gray-600">
         {track.ranking}
       </p>
-      <div >
+      <div display='block' >
         <Image
           src={track.albumImageUrl}
           height={100}
           width={100}
-          layout='responsive'
+          layout='fixed'
         />
       </div>
       <div className="flex flex-col pl-3">

@@ -10,6 +10,9 @@ export default function TopTracks() {
     return null;
   }
   return data.tracks.map((track, index) => (
-    <Track ranking={index + 1} {...track} />
+    <Track
+      key={track.title}
+      ranking={index + 1}
+      {...track} />
   ));
 }
