@@ -1,9 +1,7 @@
 // tailwind.config.js
 module.exports = {
-  mode: 'jit',
-  purge: [
-    // Use *.tsx if using TypeScript
-    './pages/**/*.js',
+  content: [
+    './app/**/*.js',
     './components/**/*.js'
   ],
   darkMode: "class", // or 'media' or 'class'
@@ -14,6 +12,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-
 }
 
