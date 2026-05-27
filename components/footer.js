@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "../styles/footer.module.css";
 import {
   faGithub,
