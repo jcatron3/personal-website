@@ -21,13 +21,14 @@ export default function SectionAbout() {
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
           <Image
-            src='/profile.png'
+            src='/profile.jpg'
             alt="Profile"
             priority={true}
             className="rounded-full"
             width={250}
             height={250}
             placeholder="blur"
+            blurDataURL="/profile.jpg"
           />
         </div>
       </div>
