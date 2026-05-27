@@ -87,8 +87,7 @@ export default async function Dashboard() {
         Top Tracks
       </h2>
       <p className="text-gray-600 dark:text-gray-400 mb-4">
-        Curious what I\'m currently jamming to? Here\'s my top tracks on Spotify,
-        updated daily.
+        {"Curious what I'm currently jamming to? Here's my top tracks on Spotify, updated daily."}
       </p>
       <TopTracks tracks={tracks} />
     </div>
