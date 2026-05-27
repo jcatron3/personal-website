@@ -1,15 +1,10 @@
-import useSWR from 'swr';
-
-import fetcher from '../lib/fetcher';
 import Track from './track';
 
-export default function TopTracks() {
-  const { data } = useSWR('/api/top-tracks', fetcher);
-
-  if (!data) {
-    return null;
+export default function TopTracks({ tracks }) {
+  if (!tracks || tracks.length === 0) {
+    return <p className="text-gray-500">No tracks found.</p>;
   }
-  return data.tracks.map((track, index) => (
-    <Track ranking={index + 1} {...track} />
+  return tracks.map((track, index) => (
+    <Track key={track.songUrl} ranking={index + 1} {...track} />
   ));
 }
